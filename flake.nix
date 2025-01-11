@@ -31,8 +31,11 @@
         asus-ally-rc71l = import ./asus/ally/rc71l;
         asus-fx504gd = import ./asus/fx504gd;
         asus-fx506hm = import ./asus/fx506hm;
+        asus-fa506ic = import ./asus/fa506ic;
         asus-fa507nv = import ./asus/fa507nv;
         asus-fa507rm = import ./asus/fa507rm;
+        asus-flow-gv302x-amdgpu = import ./asus/flow/gv302x/amdgpu;
+        asus-flow-gv302x-nvidia = import ./asus/flow/gv302x/nvidia;
         asus-pro-ws-x570-ace = import ./asus/pro-ws-x570-ace;
         asus-rog-strix-g513im = import ./asus/rog-strix/g513im;
         asus-rog-strix-g713ie = import ./asus/rog-strix/g713ie;
@@ -134,6 +137,7 @@
         lenovo-ideapad-15arh05 = import ./lenovo/ideapad/15arh05;
         lenovo-ideapad-15ach6 = import ./lenovo/ideapad/15ach6;
         lenovo-ideapad-16ach6 = import ./lenovo/ideapad/16ach6;
+        lenovo-ideapad-16ahp9 = import ./lenovo/ideapad/16ahp9;
         lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
         lenovo-ideapad-slim-5 = import ./lenovo/ideapad/slim-5;
         lenovo-ideapad-s145-15api = import ./lenovo/ideapad/s145-15api;
@@ -149,6 +153,7 @@
         lenovo-legion-16arha7 = import ./lenovo/legion/16arha7;
         lenovo-legion-16ithg6 = import ./lenovo/legion/16ithg6;
         lenovo-legion-16irx8h = import ./lenovo/legion/16irx8h;
+        lenovo-legion-16irx9h = import ./lenovo/legion/16irx9h;
         lenovo-legion-t526amr5 = import ./lenovo/legion/t526amr5;
         lenovo-legion-y530-15ich = import ./lenovo/legion/15ich;
         lenovo-thinkpad = import ./lenovo/thinkpad;
@@ -236,6 +241,8 @@
         lenovo-yoga-7-14ARH7 = import ./lenovo/yoga/7/14ARH7;
         lenovo-yoga-7-14ARH7-amdgpu = import ./lenovo/yoga/7/14ARH7/amdgpu;
         lenovo-yoga-7-14ARH7-nvidia = import ./lenovo/yoga/7/14ARH7/nvidia;
+        lenovo-yoga-7-14IAH7-integrated = import ./lenovo/yoga/7/14IAH7/integrated;
+        lenovo-yoga-7-14IAH7-hybrid = import ./lenovo/yoga/7/14IAH7/hybrid;
         lenovo-yoga-7-slim-gen8 = import ./lenovo/yoga/7/slim/gen8;
         letsnote-cf-lx4 = import ./panasonic/letsnote/cf-lx4;
         malibal-aon-s1-intel = import ./malibal/aon/s1;
@@ -281,6 +288,7 @@
         raspberry-pi-5 = import ./raspberry-pi/5;
         kobol-helios4 = import ./kobol/helios4;
         samsung-np900x3c = import ./samsung/np900x3c;
+        slimbook-hero-rpl-rtx = import ./slimbook/hero/rpl-rtx;
         starfive-visionfive-v1 = import ./starfive/visionfive/v1;
         starfive-visionfive-2 = import ./starfive/visionfive/v2;
         starlabs-starlite-i5 = import ./starlabs/starlite/i5;
@@ -328,7 +336,7 @@
         common-pc = import ./common/pc;
         common-pc-hdd = import ./common/pc/hdd;
         common-pc-laptop = import ./common/pc/laptop;
-        common-pc-laptop-acpi_call = import ./common/pc/laptop/acpi_call.nix;
+        common-pc-laptop-acpi_call = throw "common-pc-laptop-acpi_call has been removed because it is obsolete: https://github.com/NixOS/nixos-hardware/issues/1114";
         common-pc-laptop-hdd = import ./common/pc/laptop/hdd;
         common-pc-laptop-ssd = import ./common/pc/ssd;
         common-pc-ssd = import ./common/pc/ssd;
