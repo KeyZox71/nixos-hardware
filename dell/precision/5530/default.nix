@@ -16,12 +16,12 @@
       "acpi_rev_override=1"
       "acpi_osi=Linux"
       "nouveau.modeset=0"
-      "drm.vblankoffdelay=1"
+      # "drm.vblankoffdelay=1"
       "nouveau.runpm=0"
       "mem_sleep_default=deep"
       # fix flicker
       # source https://wiki.archlinux.org/index.php/Intel_graphics#Screen_flickering
-      "i915.enable_psr=0"
+      # "i915.enable_psr=0"
       "nvidia_drm.modeset=1"
     ];
     initrd.availableKernelModules = [
